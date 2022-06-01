@@ -38,3 +38,13 @@ INSTALLED_APPS = [
 ## Create Model and run migration
 py manage.py makemigrations app
 py manage.py migrate app
+
+## Git Push
+
+echo "# cf-backend-django" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:amelyec/cf-backend-django.git
+git push -u origin main
