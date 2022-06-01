@@ -15,10 +15,18 @@ py -m venv .venv
 pip install django
 pip install djangorestframework
 
-## Create project and application
-django admin core .
+## Create project
+django-admin startproject core .
 
+## Create migrations
+py manage.py migrate
 
-##
+## SuperUser
+py manage.py createsuperuser
 
-##
+[Admin Link](http://127.0.0.1:8000/admin/auth/user/)
+
+## Create application
+django-admin startapp app
+
+## 
