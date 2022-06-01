@@ -29,4 +29,12 @@ py manage.py createsuperuser
 ## Create application
 django-admin startapp app
 
-## 
+## Add app to installed apps
+INSTALLED_APPS = [
+    'app',
+    ....
+]
+
+## Create Model and run migration
+py manage.py makemigrations app
+py manage.py migrate app
